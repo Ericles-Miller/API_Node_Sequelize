@@ -5,6 +5,9 @@
   "repository": "https://github.com/Ericles-Miller/API_Node_Sequelize.git",
   "author": "Ericles-Miller <ericlesmiller15@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon dist/server.js"
+  },
   "dependencies": {
     "express": "^4.18.2"
   },
