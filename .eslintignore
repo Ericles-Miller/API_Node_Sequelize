@@ -1,0 +1,9 @@
+```bash
+Checking peerDependencies of eslint-config-airbnb@latest
+The config that you've selected requires the following dependencies:
+
+@typescript-eslint/eslint-plugin@latest eslint-config-airbnb-base@latest 
+eslint@^5.16.0 || ^6.8.0 || ^7.2.0 eslint-plugin-import@^2.22.1 
+@typescript-eslint/parser@latest
+? **Would you like to install them now with npm?** No
+```
