@@ -1,6 +1,6 @@
 import { Sequelize } from 'sequelize';
 
-const dbConfig = require('../config/databaseConfig');
+const dbConfig = require('../config/database');
 
 const connection = new Sequelize(dbConfig);
 

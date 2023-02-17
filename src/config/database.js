@@ -11,3 +11,15 @@ module.exports = {
     timestamps: true,
   },
 };
+
+// module.exports = {
+//   dialect: 'postgres',
+//   host:"localhost",
+//   username: 'postgres',
+//   password: '@18er0821',
+//   database:'node_sequelize',
+//   port: 5433,
+//   define: {
+//     timestamps: true,
+//   },
+// };
