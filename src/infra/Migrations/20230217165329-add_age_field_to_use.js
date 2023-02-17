@@ -5,7 +5,7 @@ module.exports = {
   async up (queryInterface, Sequelize) {
     return queryInterface.addColumn(
       'users', // nome of table
-      'age', // nome of field
+      'age', // nome of field 
       {
         type: Sequelize.INTEGER,
         allowNull: false,
@@ -16,6 +16,6 @@ module.exports = {
   async down (queryInterface, Sequelize) {
     return queryInterface.removeColumn(
       'users', // nome of table
-      'age'
-  )},
+      'age',
+  );},
 };
