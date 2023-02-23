@@ -15,6 +15,7 @@
     "sequelize-typescript": "^2.1.5"
   },
   "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
     "@types/express": "^4.17.17",
     "@types/sequelize": "^4.28.14",
     "@typescript-eslint/eslint-plugin": "^5.52.0",

@@ -1,13 +1,19 @@
-import { Sequelize } from 'sequelize';
+import Sequelize from 'sequelize';
 
-import { User } from '../models/Users';
+import dbConfig from '../config/database';
 
-const dbConfig = require('../config/database');
+class Database {
+  public connection: Sequelize.Sequelize;
 
-const user = User;
+  constructor() {
+    this.init();
+  }
 
-const connection = new Sequelize(dbConfig);
+  handle(): void {
+    this.connection = new Sequelize.Sequelize(dbConfig);
+  }
+}
 
-user.init(connection);
+const db : Database = new Database();
 
-export { connection };
+export { db };

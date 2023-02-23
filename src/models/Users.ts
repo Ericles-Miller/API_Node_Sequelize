@@ -1,16 +1,21 @@
-import { Model, DataTypes, InferAttributes, InferCreationAttributes } from 'sequelize';
+import { Sequelize, Model, DataTypes  } from 'sequelize';
+import database from '../database';
 
 
-class User extends Model<InferAttributes<User>, InferCreationAttributes<User>> {
-  static init(sequelize: any) {
-    super.init({
-      name: DataTypes.STRING,
-      email: DataTypes.STRING,
+class User extends Model {
+  id!: number;
+  name!: string;
+  email!: string;
+
+  User.init(
+    {
+      email: Sequelize.STRING,
+      name: Sequelize.STRING
     },
     {
-      sequelize,
-    }),
-  };
-}
+      Sequelize: database.connection,
 
-export { User };
+    }
+  )
+
+}
